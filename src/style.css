@@ -18,8 +18,11 @@ li {
   font-weight: 400;
   line-height: 20px;
   font-size: 16px;
+}
+li:first-letter {
   text-transform: capitalize;
 }
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
