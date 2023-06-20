@@ -28,6 +28,7 @@ li:first-letter {
 footer {
   font-size: 12px;
   margin-left: 30px;
+  margin-top: 10px;
 }
 
 .app {
@@ -36,7 +37,7 @@ footer {
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 30px auto;
 }
 .weather-app {
