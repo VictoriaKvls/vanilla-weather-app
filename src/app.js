@@ -31,8 +31,9 @@ function formatDay(timestamp) {
 
 function displayForecast(response) {
   let forecast = response.data.daily;
-
   let forecastElement = document.querySelector("#forecast");
+  let uvIndex = response.data.current.uvi;
+  displayUVIndex(uvIndex);
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
@@ -101,6 +102,11 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   getForecast(response.data.coord);
+}
+
+function displayUVIndex(uvIndex) {
+  let uvIndexElement = document.querySelector("#uv-index");
+  uvIndexElement.textContent = uvIndex;
 }
 
 function search(city) {
